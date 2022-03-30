@@ -1,5 +1,7 @@
 # Leaflet Animated Marker
-沿轨迹带方向的动态marker，查看 [在线示例](http://gisarmory.xyz/blog/index.html?demo=LeafletRouteAnimate)。
+沿轨迹带方向的动态marker.
+
+![img](https://qiutian00blog.oss-cn-shenzhen.aliyuncs.com/uPic/car-line.gif)
 
 ## 如何使用
 
@@ -61,6 +63,9 @@
 
 
 ## 参考链接
+
+http://gisarmory.xyz/blog/index.html?demo=LeafletRouteAnimate
+
 
 https://github.com/openplans/Leaflet.AnimatedMarker
 
