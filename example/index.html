@@ -9,6 +9,7 @@
   <script src="http://gisarmory.xyz/blog/lib/leaflet/leaflet.js"></script>
 
   <script src="../src/AnimatedMarker.js"></script>
+  <script src="./leaflet.polylineDecorator.js"></script>
 
   <style>
     body {
@@ -134,6 +135,22 @@
   var realRouteLine = L.polyline([], {
     weight: 8,
     color: '#FF9900'
+  }).addTo(map);
+  // 轨迹方向箭头
+  var decorator = L.polylineDecorator(routeLine, {
+    patterns: [{
+        repeat: 50,
+        symbol: L.Symbol.arrowHead({
+            pixelSize: 5,
+            headAngle: 75,
+            polygon: false,
+            pathOptions: {
+                stroke: true,
+                weight: 2,
+                color: '#FFFFFF'
+            }
+        })
+    }]
   }).addTo(map);
 
   var carIcon = L.icon({
